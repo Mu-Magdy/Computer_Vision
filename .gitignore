@@ -1,15 +1,7 @@
-<<<<<<< Updated upstream
-.idea	
-venv
-=======
+
 /.idea/
-/__pycache__/
 /fingers/
 /venv/
 /Headers/
 /venv/
->>>>>>> Stashed changes
-.idea/Computer Vision.iml
-.idea/misc.xml
-.idea/workspace.xml
-.idea/Computer Vision.iml
+/__pycache__/

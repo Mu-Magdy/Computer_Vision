@@ -8,7 +8,7 @@ import hand_track_module as htm
 brushThickness=15
 eraserThickness=100
 
-folderPath="Header"
+folderPath="Headers"
 myList= os.listdir(folderPath)
 overLayList=[]
 for imPath in myList:
@@ -24,7 +24,7 @@ cap =cv2.VideoCapture(0,cv2.CAP_DSHOW)
 cap.set(3,1280)
 cap.set(4,720)
 
-detector =htm.handDetector()
+detector =htm.handDetector(detectionCon=.85)
 xp,yp = 0,0
 
 imgCanvas=np.zeros((720,1280,3),np.uint8)
@@ -72,6 +72,7 @@ while True:
 
                 elif 1100 < x1 < 1230:
                     header = overLayList [2]
+                    drawColor = (0,0,0)
 
                 cv2.rectangle(img,(x1,y1-25),(x2,y2+25),drawColor,cv2.FILLED)
 

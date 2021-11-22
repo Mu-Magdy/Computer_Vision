@@ -53,7 +53,7 @@ while True:
         cv2.line(img,(x1,y1),(x2,y2),(255,0,0),3)
 
         length=math.hypot(x2-x1,y2-y1)
- #       print(length)
+        #  print(length)
 
 
         vol=np.interp(length,[30,250],[minVol,maxVol])

@@ -14,7 +14,7 @@ for imgPath in myList:
 
 pTime = 0
 
-detector = htm.handDetector()
+detector = htm.handDetector(detectionCon=0.7)
 
 tipIds = [4,8,12,16,20]
 
